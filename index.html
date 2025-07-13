@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Perfil de Proyecto - Lab 1</title>
   <style>
     body {
@@ -15,8 +16,8 @@
       color: #4f46e5;
       margin-bottom: 2rem;
     }
-    h2 {
-      margin-top: 1.5rem;
+    h2, h3 {
+      margin-top: 2rem;
       color: #111;
     }
     p, li {
@@ -26,144 +27,70 @@
     ul {
       margin-left: 1.5rem;
     }
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-    }
-    .left {
-      flex: 1 1 400px;
-      min-width: 300px;
-    }
-    .right {
-      flex: 1 1 400px;
-      min-width: 300px;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-    }
-    .right img {
+    img {
       max-width: 100%;
-      width: 500px;
       height: auto;
+      margin-top: 1rem;
       border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.3);
-    }
-    .confusion-info {
-      text-align: right;
-      margin-bottom: 1rem;
-    }
-    .confusion-info h3 {
-      margin: 0;
-      font-size: 1.2rem;
-      color: #4f46e5;
-    }
-    .confusion-info p {
-      font-size: 0.95rem;
-      color: #444;
-      margin-top: 0.3rem;
-    }
-
-    .charts {
-      margin-top: 3rem;
-    }
-
-    .chart {
-      margin-bottom: 2.5rem;
-    }
-
-    .chart h3 {
-      color: #4f46e5;
-      margin-bottom: 0.5rem;
-    }
-
-    .chart img {
-      max-width: 100%;
-      width: 600px;
-      height: auto;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.3);
-    }
-
-    .chart p {
-      margin-top: 0.5rem;
-      color: #444;
-      font-size: 0.95rem;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     }
   </style>
 </head>
 <body>
   <h1>Perfil del Proyecto: Laboratorio 1 - Clasificación</h1>
 
-  <div class="container">
-    <!-- Columna izquierda con texto -->
-    <div class="left">
-      <h2>Nombre del Estudiante:</h2>
-      <p>Maryorie Viluce</p>
+  <h2>Nombre del Estudiante:</h2>
+  <p>Maryorie Viluce</p>
 
-      <h2>Objetivo y Resumen del Trabajo:</h2>
-      <p>
-        Implementar un modelo de clasificación utilizando datos de clientes para predecir si abandonarán un servicio (churn).
-        Se aplicaron técnicas básicas de aprendizaje supervisado.<br><br>
-        Se cargó un archivo CSV con información de clientes. Se exploraron los datos, se graficó la distribución de clases y
-        se entrenó un modelo de Árbol de Decisión. Finalmente, se evaluó su precisión.
-      </p>
+  <h2>Objetivo y Resumen del Trabajo:</h2>
+  <p>
+    Implementar un modelo de clasificación utilizando datos de clientes para predecir si abandonarán un servicio (churn).
+    Se aplicaron técnicas básicas de aprendizaje supervisado.<br><br>
+    Se cargó un archivo CSV con información de clientes. Se exploraron los datos, se graficó la distribución de clases y
+    se entrenó un modelo de Árbol de Decisión. Finalmente, se evaluó su precisión.
+  </p>
 
-      <h2>Lenguaje y herramientas utilizadas:</h2>
-      <ul>
-        <li>Python (Thonny)</li>
-        <li>Librerías: pandas, matplotlib, scikit-learn</li>
-      </ul>
+  <h2>Lenguaje y herramientas utilizadas:</h2>
+  <ul>
+    <li>Python (Thonny)</li>
+    <li>Librerías: pandas, matplotlib, scikit-learn</li>
+  </ul>
 
-      <h2>Resultado del modelo:</h2>
-      <ul>
-        <li>Modelo: Árbol de Decisión (DecisionTreeClassifier)</li>
-        <li>Precisión alcanzada: 94.8%</li>
-        <li>Variable objetivo: churn</li>
-      </ul>
+  <h2>Resultado del modelo:</h2>
+  <ul>
+    <li>Modelo: Árbol de Decisión (DecisionTreeClassifier)</li>
+    <li>Precisión alcanzada: 94.8%</li>
+    <li>Variable objetivo: churn</li>
+  </ul>
 
-      <h2>Conclusión:</h2>
-      <p>
-        El laboratorio permitió aplicar un flujo completo de trabajo de IA: preparación de datos, entrenamiento de modelos
-        y evaluación. Usar Thonny en vez de Jupyter no afectó los resultados esperados.
-      </p>
-    </div>
+  <h2>Conclusión:</h2>
+  <p>
+    El laboratorio permitió aplicar un flujo completo de trabajo de IA: preparación de datos, entrenamiento de modelos
+    y evaluación. Usar Thonny en vez de Jupyter no afectó los resultados esperados.
+  </p>
 
-    <!-- Columna derecha con imagen y descripción -->
-    <div class="right">
-      <div class="confusion-info">
-        <h3>MATRIZ DE CONFUSIÓN</h3>
-        <p>La siguiente imagen muestra el rendimiento del modelo de Árbol de Decisión al clasificar correctamente los datos del conjunto de entrenamiento.</p>
-      </div>
-      <img src="matriz-confusion.png" alt="Matriz de Confusión">
-    </div>
-  </div>
+  <h2>Visualización de Resultados</h2>
 
-  <div class="charts">
-    <div class="chart">
-      <h3>Curva Precisión vs. Exhaustividad</h3>
-      <img src="c91f26d3-a2be-44d0-80ed-0900d9934add.png" alt="Curva Precisión vs. Exhaustividad">
-      <p>Esta curva compara los modelos Random Forest y KNN evaluando su precisión en función de la exhaustividad (recall).</p>
-    </div>
+  <h3>Matriz de Confusión</h3>
+  <p>La siguiente imagen muestra el rendimiento del modelo de Árbol de Decisión al clasificar correctamente los datos del conjunto de entrenamiento.</p>
+  <img src="matriz-confusion.png" alt="Matriz de Confusión">
 
-    <div class="chart">
-      <h3>Curva Precisión vs. Umbral</h3>
-      <img src="b6f94dfc-5d01-4988-ba45-61ba235bf5dc.png" alt="Curva Precisión vs. Umbral">
-      <p>Permite observar cómo cambia la precisión de los modelos Random Forest y KNN al modificar el umbral de decisión.</p>
-    </div>
+  <h3>Curva Precisión vs Exhaustividad</h3>
+  <p>Esta gráfica compara cómo varían la precisión y la exhaustividad de los modelos Random Forest y KNN.</p>
+  <img src="precision-recall.png" alt="Curva Precisión vs Recall">
 
-    <div class="chart">
-      <h3>Curva Exhaustividad vs. Umbral</h3>
-      <img src="0f25a3fc-b815-4249-86f0-c1b83888da14.png" alt="Curva Recall vs. Umbral">
-      <p>Refleja cómo varía la exhaustividad al cambiar el umbral, lo que es clave para aplicaciones sensibles a falsos negativos.</p>
-    </div>
+  <h3>Precisión vs Umbral</h3>
+  <p>Permite visualizar cómo la precisión de los modelos cambia a medida que varía el umbral de decisión.</p>
+  <img src="precision-threshold.png" alt="Precisión vs Umbral">
 
-    <div class="chart">
-      <h3>Curva ROC</h3>
-      <img src="65c8dd32-0e0f-4c64-ae35-e8dfe3302978.png" alt="Curva ROC">
-      <p>Comparación del desempeño global de los modelos Random Forest y KNN mediante el área bajo la curva (AUC).</p>
-    </div>
-  </div>
+  <h3>Exhaustividad vs Umbral</h3>
+  <p>Ilustra cómo la exhaustividad (recall) varía con diferentes umbrales para Random Forest y KNN.</p>
+  <img src="recall-threshold.png" alt="Recall vs Umbral">
+
+  <h3>Curva ROC</h3>
+  <p>Esta curva compara la tasa de verdaderos positivos contra la de falsos positivos para ambos modelos. Muestra su desempeño general.</p>
+  <img src="roc-curve.png" alt="Curva ROC">
+
 </body>
 </html>
 
