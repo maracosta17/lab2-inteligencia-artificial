@@ -39,8 +39,8 @@
       flex: 1 1 400px;
       min-width: 300px;
       display: flex;
-      justify-content: flex-end;
-      align-items: flex-start;
+      flex-direction: column;
+      align-items: flex-end;
     }
     .right img {
       max-width: 100%;
@@ -48,6 +48,20 @@
       height: auto;
       border-radius: 10px;
       box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+    .confusion-info {
+      text-align: right;
+      margin-bottom: 1rem;
+    }
+    .confusion-info h3 {
+      margin: 0;
+      font-size: 1.2rem;
+      color: #4f46e5;
+    }
+    .confusion-info p {
+      font-size: 0.95rem;
+      color: #444;
+      margin-top: 0.3rem;
     }
   </style>
 </head>
@@ -88,10 +102,15 @@
       </p>
     </div>
 
-    <!-- Columna derecha con imagen -->
+    <!-- Columna derecha con imagen y descripción -->
     <div class="right">
+      <div class="confusion-info">
+        <h3>MATRIZ DE CONFUSIÓN</h3>
+        <p>La siguiente imagen muestra el rendimiento del modelo de Árbol de Decisión al clasificar correctamente los datos del conjunto de entrenamiento.</p>
+      </div>
       <img src="matriz-confusion.png" alt="Matriz de Confusión">
     </div>
   </div>
 </body>
 </html>
+
