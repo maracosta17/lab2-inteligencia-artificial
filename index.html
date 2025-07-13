@@ -1,58 +1,99 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Perfil de Proyecto - Lab 1</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 2rem;
-            background-color: #ffffff;
-            color: #111827;
-        }
-        h1 {
-            color: #4f46e5;
-        }
-        img {
-            max-width: 600px;
-            height: auto;
-            border-radius: 12px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-            margin-top: 1rem;
-            display: block;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Perfil de Proyecto - Lab 1</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      background-color: #f4f4f9;
+      color: #222;
+    }
+    h1 {
+      color: #4f46e5;
+    }
+    h2 {
+      margin-top: 2rem;
+      color: #111;
+    }
+    p, li {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    ul {
+      margin-left: 1.5rem;
+    }
+    .confusion-section {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 2rem;
+      margin-top: 2.5rem;
+      flex-wrap: wrap;
+    }
+    .confusion-text {
+      flex: 1;
+      min-width: 250px;
+    }
+    .confusion-img {
+      flex-shrink: 0;
+    }
+    .confusion-img img {
+      width: 280px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+  </style>
 </head>
 <body>
-    <h1>Perfil del Proyecto: Laboratorio 1 - Clasificación</h1>
+  <h1>Perfil del Proyecto: Laboratorio 1 - Clasificación</h1>
 
-    <h2>Nombre del Estudiante:</h2>
-    <p>Maryorie Viluce</p>
+  <h2>Nombre del Estudiante:</h2>
+  <p>Maryorie Viluce</p>
 
-    <h2>Objetivo:</h2>
-    <p>Implementar un modelo de clasificación utilizando datos de clientes para predecir si abandonarán un servicio (churn). Se aplicaron técnicas básicas de aprendizaje supervisado.</p>
+  <h2>Objetivo:</h2>
+  <p>
+    Implementar un modelo de clasificación utilizando datos de clientes para predecir si abandonarán un servicio (churn).
+    Se aplicaron técnicas básicas de aprendizaje supervisado.
+  </p>
 
-    <h2>Lenguaje y herramientas utilizadas:</h2>
-    <ul>
-        <li>Python (Thonny)</li>
-        <li>Librerías: pandas, matplotlib, scikit-learn</li>
-    </ul>
+  <h2>Lenguaje y herramientas utilizadas:</h2>
+  <ul>
+    <li>Python (Thonny)</li>
+    <li>Librerías: pandas, matplotlib, scikit-learn</li>
+  </ul>
 
-    <h2>Resumen del trabajo:</h2>
-    <p>Se cargó un archivo CSV con información de clientes. Se exploraron los datos, se graficó la distribución de clases y se entrenó un modelo de Árbol de Decisión. Finalmente, se evaluó su precisión.</p>
+  <h2>Resumen del trabajo:</h2>
+  <p>
+    Se cargó un archivo CSV con información de clientes. Se exploraron los datos, se graficó la distribución de clases y
+    se entrenó un modelo de Árbol de Decisión. Finalmente, se evaluó su precisión.
+  </p>
 
-    <h2>Resultado del modelo:</h2>
-    <ul>
-        <li>Modelo: Árbol de Decisión (DecisionTreeClassifier)</li>
-        <li>Precisión alcanzada: 94.8%</li>
-        <li>Variable objetivo: churn</li>
-    </ul>
+  <h2>Resultado del modelo:</h2>
+  <ul>
+    <li>Modelo: Árbol de Decisión (DecisionTreeClassifier)</li>
+    <li>Precisión alcanzada: 94.8%</li>
+    <li>Variable objetivo: churn</li>
+  </ul>
 
-    <h2>Conclusión:</h2>
-    <p>El laboratorio permitió aplicar un flujo completo de trabajo de IA: preparación de datos, entrenamiento de modelos y evaluación. Usar Thonny en vez de Jupyter no afectó los resultados esperados.</p>
+  <h2>Conclusión:</h2>
+  <p>
+    El laboratorio permitió aplicar un flujo completo de trabajo de IA: preparación de datos, entrenamiento de modelos
+    y evaluación. Usar Thonny en vez de Jupyter no afectó los resultados esperados.
+  </p>
 
-    <h2>Matriz de Confusión:</h2>
-    <img src="matriz-confusion.png" alt="Matriz de Confusión">
+  <!-- MATRIZ DE CONFUSIÓN -->
+  <div class="confusion-section">
+    <div class="confusion-text">
+      <h2>Matriz de Confusión:</h2>
+      <p>
+        La siguiente imagen muestra el rendimiento del modelo de Árbol de Decisión al clasificar correctamente los datos del conjunto de entrenamiento.
+      </p>
+    </div>
+    <div class="confusion-img">
+      <img src="matriz-confusion.png" alt="Matriz de Confusión">
+    </div>
+  </div>
 </body>
 </html>
-
