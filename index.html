@@ -44,7 +44,7 @@
     }
     .right img {
       max-width: 100%;
-      width: 400px;
+      width: 500px;
       height: auto;
       border-radius: 10px;
       box-shadow: 0 0 15px rgba(0,0,0,0.3);
@@ -62,6 +62,33 @@
       font-size: 0.95rem;
       color: #444;
       margin-top: 0.3rem;
+    }
+
+    .charts {
+      margin-top: 3rem;
+    }
+
+    .chart {
+      margin-bottom: 2.5rem;
+    }
+
+    .chart h3 {
+      color: #4f46e5;
+      margin-bottom: 0.5rem;
+    }
+
+    .chart img {
+      max-width: 100%;
+      width: 600px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+
+    .chart p {
+      margin-top: 0.5rem;
+      color: #444;
+      font-size: 0.95rem;
     }
   </style>
 </head>
@@ -109,6 +136,32 @@
         <p>La siguiente imagen muestra el rendimiento del modelo de Árbol de Decisión al clasificar correctamente los datos del conjunto de entrenamiento.</p>
       </div>
       <img src="matriz-confusion.png" alt="Matriz de Confusión">
+    </div>
+  </div>
+
+  <div class="charts">
+    <div class="chart">
+      <h3>Curva Precisión vs. Exhaustividad</h3>
+      <img src="c91f26d3-a2be-44d0-80ed-0900d9934add.png" alt="Curva Precisión vs. Exhaustividad">
+      <p>Esta curva compara los modelos Random Forest y KNN evaluando su precisión en función de la exhaustividad (recall).</p>
+    </div>
+
+    <div class="chart">
+      <h3>Curva Precisión vs. Umbral</h3>
+      <img src="b6f94dfc-5d01-4988-ba45-61ba235bf5dc.png" alt="Curva Precisión vs. Umbral">
+      <p>Permite observar cómo cambia la precisión de los modelos Random Forest y KNN al modificar el umbral de decisión.</p>
+    </div>
+
+    <div class="chart">
+      <h3>Curva Exhaustividad vs. Umbral</h3>
+      <img src="0f25a3fc-b815-4249-86f0-c1b83888da14.png" alt="Curva Recall vs. Umbral">
+      <p>Refleja cómo varía la exhaustividad al cambiar el umbral, lo que es clave para aplicaciones sensibles a falsos negativos.</p>
+    </div>
+
+    <div class="chart">
+      <h3>Curva ROC</h3>
+      <img src="65c8dd32-0e0f-4c64-ae35-e8dfe3302978.png" alt="Curva ROC">
+      <p>Comparación del desempeño global de los modelos Random Forest y KNN mediante el área bajo la curva (AUC).</p>
     </div>
   </div>
 </body>
